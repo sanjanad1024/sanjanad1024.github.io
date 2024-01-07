@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://manojdas.github.io/tacad2/sitemap.xml
+Sitemap: https://sanjanad1024.github.io/sitemap.xml
