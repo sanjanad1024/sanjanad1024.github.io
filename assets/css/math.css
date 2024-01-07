@@ -1,0 +1,216 @@
+/*
+    Latex styles derived from https://github.com/vincentdoerig/latex-css/blob/master/style.css
+*/
+/* Theorem */
+.theorem, .lemma, .definition, .claim, .example, .problem, .claim-un, .remark {
+    margin: 12px 0;
+    padding: 5px 5px 5px 10px;
+    display: block;
+}
+.theorem {
+    counter-increment: theorem;
+    font-style: italic;
+    background-color: rgb(245, 228, 225);
+    border-left-style: solid;
+    border-left-color: darkred;
+  }
+.theorem::before {
+    content: 'Theorem ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.theorem[text]:before {
+    content: 'Theorem ' counter(theorem) ' (' attr(text) "). ";
+}
+/* Lemma */
+.lemma {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(245, 228, 225);
+    border-left-style: solid;
+    border-left-color: darkred;
+}
+.lemma::before {
+    content: 'Lemma ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.lemma[text]:before {
+    content: 'Lemma ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Proposition */
+
+.proposition {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(225, 234, 236);
+    border-left-style: solid;
+    border-left-color: darkblue;
+}
+.proposition::before {
+    content: 'Proposition ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.proposition[text]:before {
+    content: 'Proposition ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Claim */
+.claim {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(225, 234, 236);
+    border-left-style: solid;
+    border-left-color: darkblue;
+}
+.claim::before {
+    content: 'Claim ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.claim[text]:before {
+    content: 'Claim ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Unnumbered Claim */
+.claim-un {
+    font-style: normal;
+    background-color: rgb(225, 234, 236);
+    border-left-style: solid;
+    border-left-color: darkblue;
+}
+.claim-un::before {
+    content: 'Claim. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.claim-un[text]:before {
+    content: 'Claim (' attr(text) "). ";
+}  
+
+/* Fact */
+.fact {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(225, 234, 236);
+    border-left-style: solid;
+    border-left-color: darkblue;
+}
+.fact::before {
+    content: 'Fact ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.fact[text]:before {
+    content: 'Fact ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Example */
+.example {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(235, 243, 225);
+    border-left-style: solid;
+    border-left-color: darkgreen;
+}
+.example::before {
+    content: 'Example ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.example[text]:before {
+    content: 'Example ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Question */
+.question {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(235, 243, 225);
+    border-left-style: solid;
+    border-left-color: darkgreen;
+}
+.question::before {
+    content: 'Question ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.question[text]:before {
+    content: 'Question ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+/* Problem */
+.problem {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(235, 243, 225);
+    border-left-style: solid;
+    border-left-color: darkgreen;
+}
+.problem::before {
+    content: 'Problem ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.problem[text]:before {
+    content: 'Problem ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+.remark {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(230, 231, 233);
+    border-left-style: solid;
+    border-left-color: darkslategray;
+}
+.remark::before {
+    content: 'Remark ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.remark[text]:before {
+    content: 'Remark ' counter(theorem) ' (' attr(text) "). ";
+}  
+
+
+/* Proof */
+.proof {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    position: relative;
+}
+.proof::before {
+    content: 'Proof. ' attr(text);
+    font-style: italic;
+}
+.proof[text]:before {
+    content: attr(text) " .";
+    font-style: italic;
+} 
+.proof:after {
+    content: '◾️';
+    position: absolute;
+    right: 0px;
+    bottom: -2px;
+}
+  
+/* Definition */
+.definition {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: rgb(230, 231, 233);
+    border-left-style: solid;
+    border-left-color: darkslategray;
+}
+.definition::before {
+    content: 'Definition ' counter(theorem) '. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.definition[text]:before {
+    content: 'Definition ' counter(theorem) ' (' attr(text) "). ";
+}
+  

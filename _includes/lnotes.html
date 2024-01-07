@@ -1,0 +1,22 @@
+<ul class='sd-lnotes'>
+{% for entry in include.notes %}
+    {% if entry.status == 'WIP' %}
+        {% assign sclass = 'class="sd-wip"' %}
+    {% else %}
+        {% assign sclass = '' %}
+    {% endif %}
+    <li {{ sclass }}>
+        <span class="courseno">{{entry.courseno}}</span>: 
+    <span class="title">
+        {{ entry.title }}</span>, {{ entry.term }}
+    <span class="links">
+        {% if entry.notes %}
+          (<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>)
+        {% endif %}
+    </span>
+    {% if entry.comment %}
+        <span class="comment">{{ entry.comment }}</span>
+    {% endif %}
+    </li>
+    {% endfor %}
+    </ul>

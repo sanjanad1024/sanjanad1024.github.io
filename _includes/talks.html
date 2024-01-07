@@ -1,0 +1,58 @@
+<ul class='sd-seminar-notes'>
+{% for entry in include.talks %}
+    <li>
+<div class="title">
+    {{ entry.title }}
+</div>
+{% if entry.presenters %}
+    <div class="author">
+        {{ entry.presenters }}
+    </div>
+{% endif %}
+<p class="post-meta">
+    {{ entry.date | date: '%B %-d, %Y' }}
+</p>
+{% if entry.pub %}
+    <div class="publication">
+        <em>{{ entry.pub }}</em>
+    </div>
+{% endif %}
+<span class="links">
+    {% if entry.notes %}
+    [<a href="{{ entry.notes | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Notes</a>]
+  {% endif %}
+    {% if entry.arxiv %}
+      [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
+    {% endif %}
+
+    {% if entry.html %}
+      [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+    {% endif %}
+    {% if entry.pdf %}
+      [<a href="{{ entry.pdf }}" target="_blank">PDF</a>]
+    {% endif %}
+    {% if entry.supp %}
+      [<a href="{{ entry.supp | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+    {% endif %}
+    {% if entry.code %}
+      [<a href="{{ entry.code }}" target="_blank">Code</a>]
+    {% endif %}
+    {% if entry.website %}
+      [<a href="{{ entry.website }}" target="_blank">Website</a>]
+    {% endif %}
+    {% if entry.poster %}
+      [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
+    {% endif %}
+    {% if entry.abstract %}
+      [<a href="{{ entry.abstract }}" target="_blank">Abstract</a>]
+    {% endif %}
+    {% if entry.slides %}
+      [<a href="{{ entry.slides | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
+    {% endif %}
+    {% if entry.slideshare %}
+      [<a href="{{ entry.slideshare }}" target="_blank">Slides</a>]
+    {% endif %}
+</span>
+</li>
+{% endfor %}
+</ul>

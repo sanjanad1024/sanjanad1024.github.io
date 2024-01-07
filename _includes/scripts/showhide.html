@@ -1,0 +1,23 @@
+<!-- <link rel="stylesheet" href="{{ "/assets/css/showhide.css" | relative_url }}"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $( ".sd-hidden" ).each(function( index ) {
+        console.log( $( this ).attr('desc'))
+        
+        let btnLabel = $( this ).attr('desc') ? $( this ).attr('desc') : 'Hidden'
+          $( this ).wrap( "<span class='wrap-hidden'></span>" )
+        $( this ).parent().prepend(`<span class='hide-heading'>${btnLabel}</span>`)
+        // console.log('btn', btn.text())
+        $( this ).parent().find('.hide-heading').click(function() {
+          console.log('btn2', $(this).text())
+                let par =  $(this).parent()
+          console.log('par', par.text())
+            let hidden = par.find(".sd-hidden")
+          console.log('hidden', hidden.text())
+    
+          hidden.toggle()
+        });
+      });
+    });
+</script>    
