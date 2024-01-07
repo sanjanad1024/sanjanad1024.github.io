@@ -3,16 +3,16 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Test
+first_name: Sanjana
 middle_name: 
 last_name: Das
-email: test[dot]das[at]mit[dot]com
+email: sanjanad[at]mit[dot]edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal page of Test Das.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  Personal page of Sanjana Das.
+footer_text: # >
+  # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: math, mit, notes, combinatorics  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
