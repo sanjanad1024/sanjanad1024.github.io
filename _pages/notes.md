@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /notes/
-title: notes
+title: Notes
 description: Lecture notes from classes I have taken and notes from seminars I have attended.
 nav: true
 nav_order: 1

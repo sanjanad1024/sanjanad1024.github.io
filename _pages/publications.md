@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /research/
-title: research
+permalink: /papers/
+title: Papers
 description: My research by topic.
 nav: true
 nav_order: 2
