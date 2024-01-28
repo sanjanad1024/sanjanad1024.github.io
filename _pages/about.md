@@ -20,6 +20,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a MIT class of 2025 student planning to major in Math and minor in Linguistics. My areas of interest include Extremal Combinatorics, Complexity Theory, and Lingusitics.
-
-At this site, you will find lecture notes from classes I have taken as well as notes from seminars.
+I'm an undergraduate at MIT (in the class of 2025), planning to major in math and minor in linguistics. This site contains notes from some subset of the classes I've taken and seminars I've attended. 
