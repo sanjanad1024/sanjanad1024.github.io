@@ -5,21 +5,26 @@
     {{ entry.title }}
 </div>
 {% if entry.presenters %}
-    <div class="author">
+    <span class="author">
         {{ entry.presenters }}
-    </div>
+    </span>
 {% endif %}
-<p class="post-meta">
-    {{ entry.date | date: '%B %-d, %Y' }}
-</p>
+<span class="date">
+    ({{ entry.date | date: '%B %-d, %Y' }})
+</span>
 {% if entry.pub %}
     <div class="publication">
         <em>{{ entry.pub }}</em>
     </div>
 {% endif %}
-<span class="links">
+{% if entry.paper %}
+    <div class="paper">
+        {{ entry.paper }}
+    </div>
+{% endif %}
+<div class="links">
     {% if entry.notes %}
-    [<a href="{{ entry.notes | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Notes</a>]
+    [<a href="{{ entry.notes | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
   {% endif %}
     {% if entry.arxiv %}
       [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
@@ -35,24 +40,24 @@
       [<a href="{{ entry.supp | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
     {% endif %}
     {% if entry.code %}
-      [<a href="{{ entry.code }}" target="_blank">Code</a>]
+      [<a href="{{ entry.code }}" target="_blank">code</a>]
     {% endif %}
     {% if entry.website %}
-      [<a href="{{ entry.website }}" target="_blank">Website</a>]
+      [<a href="{{ entry.website }}" target="_blank">website</a>]
     {% endif %}
     {% if entry.poster %}
-      [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
+      [<a href="{{ entry.poster }}" target="_blank">poster</a>]
     {% endif %}
     {% if entry.abstract %}
-      [<a href="{{ entry.abstract }}" target="_blank">Abstract</a>]
+      [<a href="{{ entry.abstract }}" target="_blank">abstract</a>]
     {% endif %}
     {% if entry.slides %}
-      [<a href="{{ entry.slides | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
+      [<a href="{{ entry.slides | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
     {% endif %}
     {% if entry.slideshare %}
-      [<a href="{{ entry.slideshare }}" target="_blank">Slides</a>]
+      [<a href="{{ entry.slideshare }}" target="_blank">slides</a>]
     {% endif %}
-</span>
+</div>
 </li>
 {% endfor %}
 </ul>
