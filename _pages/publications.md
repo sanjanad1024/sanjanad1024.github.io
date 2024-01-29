@@ -2,12 +2,14 @@
 layout: page
 permalink: /papers/
 title: Papers
-description: A list of research papers I've written. 
+description: 
 nav: true
 nav_order: 2
 topics: [Combinatorics, Number theory]
 ---
 <!-- _pages/publications.md -->
+
+Here's a list of the research papers I've written. 
 
 {% assign papers = site.papers | sort: 'date' | reverse %}
 {% include pub.html papers=papers %}

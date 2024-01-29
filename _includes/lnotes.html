@@ -11,11 +11,11 @@
         {{ entry.title }}</span>, {{ entry.term }}
     <span class="links">
         {% if entry.notes %}
-          (<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>)
+          [<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
         {% endif %}
     </span>
     {% if entry.comment %}
-        <span class="comment">{{ entry.comment }}</span>
+        <div class="comment">{{ entry.comment }}</div>
     {% endif %}
     </li>
     {% endfor %}
