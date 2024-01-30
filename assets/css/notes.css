@@ -2,24 +2,22 @@
     font-weight:bolder
 }
 
-.sd-lnotes .sd-wip div, .sd-lnotes .sd-wip span {
+.sd-lnotes .sd-wip div, .sd-lnotes .sd-wip span, .sd-lnotes .sd-wip {
     color:gray
 }
 
 .sd-lnotes .instructor {
-    font-size: 0.8em;
-    color: darkgray
+    font-size: 0.9em;
 }
 
 .sd-lnotes .comment {
     font-style: italic;
-    font-size: 0.8em;
-    color: darkgray
+    font-size: 0.8em
 }
 
 .sd-seminar-notes .paper {
-    font-size: 0.9em;
-    color: darkgray
+    font-size: 0.8em;
+    color: gray
 }
 
 .sd-seminar-notes .date {
