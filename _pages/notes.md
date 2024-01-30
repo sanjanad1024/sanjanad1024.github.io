@@ -37,7 +37,7 @@ I've also contributed to the MIT OCW student notes for <a href="https://ocw.mit.
 
 ### Reading Group Seminar
 
-Here are notes from a reading group seminar at MIT. As before, all errors are due to me and not the presenter. 
+Here are notes from a reading group seminar at MIT. As before, all errors are due to me, not the presenter. 
 
 {% assign notes = site.seminar_notes | where: 'series', 'Reading Group' | sort: 'date' | reverse %}
 
