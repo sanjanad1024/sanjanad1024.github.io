@@ -14,6 +14,10 @@
           [<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
         {% endif %}
     </span>
+    {% if entry.instructor %}
+        <div class="instructor">Taught by {{ entry.instructor }}.</div>
+    {% endif %}
+
     {% if entry.comment %}
         <div class="comment">{{ entry.comment }}</div>
     {% endif %}

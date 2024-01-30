@@ -3,7 +3,12 @@
 }
 
 .sd-lnotes .sd-wip span, .sd-lnotes .sd-wip {
-    color:darkgray
+    color:gray
+}
+
+.sd-lnotes .instructor {
+    font-size: 0.8em;
+    color: darkgray
 }
 
 .sd-lnotes .comment {
