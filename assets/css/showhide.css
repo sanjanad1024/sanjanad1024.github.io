@@ -9,7 +9,7 @@
 .hide-heading {
     text-decoration: none;
     color: #fff;
-    background-color: rgb(100, 190, 200);
+    background-color: #b3d7e2;
     border-radius: 2px;
     padding: 0px 4px;
 }
@@ -17,7 +17,7 @@
 .hide-heading:hover {
     text-decoration: none;
     color: #fff;
-    background-color: rgb(50, 170, 190);
+    background-color: #a1cddb;
 }
 /*
 .wrap-hidden {

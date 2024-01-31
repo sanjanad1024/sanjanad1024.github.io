@@ -3,7 +3,7 @@ layout: post
 title:  "Perfect Power Polynomials"
 date:   2022-06-04
 categories: number-theory olympiad
-description: when is an intger-coefficient polynomial always a perfect power
+description: Which integer-coefficient polynomials only attain values which are perfect powers? 
 tags: 
 giscus_comments: false
 related_posts: false
