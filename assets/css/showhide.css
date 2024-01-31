@@ -1,6 +1,6 @@
 .sd-hidden {
     display: none;
-    background-color: #f3f3f3;
+    background-color: var(--global-hide-bg-color);
     border-radius: 14.5px;
     padding: 6px 25px 4px 20px;
     margin: 6px 0px 10px 0px

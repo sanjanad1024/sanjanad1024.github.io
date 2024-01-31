@@ -6,38 +6,37 @@
     margin: 12px 0;
     padding: 5px 5px 5px 10px;
     display: block;
-    color: black
 }
 /* Theorem-box styles */
 .theorem, .lemma, .proposition {
     counter-increment: theorem;
-    background-color: #eaf4f7;
+    background-color: var(--global-thm-bg-color);
     border-left-style: solid;
-    border-left-color: darkblue;
+    border-left-color: var(--global-thm-line-color);
 }
 /* Claim-box styles */
 .claim, .algorithm, .conjecture, .hypothesis, .fact {
     counter-increment: theorem;
     font-style: normal;
-    background-color: #eaeef7;
+    background-color: var(--global-claim-bg-color);
     border-left-style: solid;
-    border-left-color: darkblue;
+    border-left-color: var(--global-claim-line-color);
 }
 /* Example-box styles */
 .example, .question, .problem {
     counter-increment: theorem;
     font-style: normal;
-    background-color: #eef5ec;
+    background-color: var(--global-ex-bg-color);
     border-left-style: solid;
-    border-left-color: darkgreen;
+    border-left-color: var(--global-ex-line-color);
 }
 /* Definition-box styles */
 .definition, .remark {
     counter-increment: theorem;
     font-style: normal;
-    background-color: #efecf5;
+    background-color: var(--global-defn-bg-color);
     border-left-style: solid;
-    border-left-color: #483248;
+    border-left-color: var(--global-defn-line-color);
 }
 
 .theorem::before {
@@ -179,7 +178,7 @@
 /* Unnumbered Claim */
 .claim-un {
     font-style: normal;
-    background-color: #eaeef7;
+    background-color: var(--global-claim-bg-color);
     border-left-style: solid;
     border-left-color: darkblue;
 }

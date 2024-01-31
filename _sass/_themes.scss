@@ -7,8 +7,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{$my-blue-color};
+  --global-hover-color: #{$my-blue-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -29,6 +29,16 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+
+  --global-thm-bg-color: #eaf4f7;
+  --global-thm-line-color: #60a2b6;
+  --global-claim-bg-color: #eaeef7;
+  --global-claim-line-color: #6a85c6;
+  --global-ex-bg-color: #eef5ec;
+  --global-ex-line-color: #699376;
+  --global-defn-bg-color: #efecf5;
+  --global-defn-line-color: #8d77b8;
+  --global-hide-bg-color: #f3f3f3;
 
   .fa-sun {
     display : none;
@@ -52,8 +62,8 @@ html[data-theme='dark'] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{$my-cyan-color};
+  --global-hover-color: #{$my-cyan-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
@@ -74,6 +84,16 @@ html[data-theme='dark'] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+
+  --global-thm-bg-color: #60a2b6;
+  --global-thm-line-color: #eaf4f7;
+  --global-claim-bg-color: #6a85c6;
+  --global-claim-line-color: #eaeef7;
+  --global-ex-bg-color: #699376;
+  --global-ex-line-color: #eef5ec;
+  --global-defn-bg-color: #8d77b8;
+  --global-defn-line-color: #efecf5;
+  --global-hide-bg-color: #606060;
 
   .fa-sun {
     padding-left: 10px;
