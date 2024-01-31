@@ -164,7 +164,7 @@
     font-style: italic;
 }
 .proof[text]:before {
-    content: attr(text) " .";
+    content: attr(text) ". ";
     font-style: italic;
 } 
 .proof:after {
