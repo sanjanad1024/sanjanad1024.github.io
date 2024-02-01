@@ -1,31 +1,31 @@
 <ul class='sd-seminar-notes'>
-{% for entry in include.talks %}
-    <li>
-<div class="title">
+  {% for entry in include.talks %}
+    {% if entry.status == 'WIP' %}
+      {% assign sclass = 'class="sd-wip"' %}
+    {% else %}
+      {% assign sclass = '' %}
+    {% endif %}
+    <li {{ sclass }}>
+<span class="title">
     {{ entry.title }}
-</div>
-{% if entry.presenters %}
-    <span class="author">
-        {{ entry.presenters }}
-    </span>
-{% endif %}
-<span class="date">
-    ({{ entry.date | date: '%B %-d, %Y' }})
 </span>
-{% if entry.pub %}
-    <div class="publication">
-        <em>{{ entry.pub }}</em>
-    </div>
-{% endif %}
+<span class="links">
+  {% if entry.notes %}
+    [<a href="{{ entry.notes | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
+  {% endif %}
+</span>
+<div class="author">
+  {% if entry.presenters %}
+    {{ entry.presenters }}
+  {% endif %}
+  ({{ entry.date | date: '%B %-d, %Y' }})
+</div>
 {% if entry.paper %}
     <div class="paper">
         {{ entry.paper }}
     </div>
 {% endif %}
 <div class="links">
-    {% if entry.notes %}
-    [<a href="{{ entry.notes | prepend: '/assets/pdf/seminar_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
-  {% endif %}
     {% if entry.arxiv %}
       [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
     {% endif %}

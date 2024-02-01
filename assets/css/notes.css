@@ -2,8 +2,8 @@
     font-weight:bolder
 }
 
-.sd-lnotes .sd-wip div, .sd-lnotes .sd-wip span, .sd-lnotes .sd-wip {
-    color:gray
+.sd-lnotes .sd-wip div, .sd-lnotes .sd-wip span, .sd-lnotes .sd-wip, .sd-seminar-notes .sd-wip div, .sd-seminar-notes .sd-wip span, .sd-seminar-notes .sd-wip {
+    color:var(--global-gray-text-color)
 }
 
 .sd-lnotes .instructor {
@@ -17,10 +17,13 @@
 
 .sd-seminar-notes .paper {
     font-size: 0.8em;
-    color: gray
+    font-style: italic
 }
 
-.sd-seminar-notes .date {
-    font-size: 0.9em;
-    color: darkgray
+.sd-seminar-notes .author {
+    font-size: 0.9em
+}
+
+.sd-papers .publication {
+    font-size: 0.8em
 }

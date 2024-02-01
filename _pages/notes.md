@@ -19,7 +19,7 @@ I like to LaTeX notes; some of these notes are posted here.
 
 Here are notes from several of the classes I've taken at MIT. Please note that all course content is owned by MIT and its professors, while all errors should be attributed to me (either in transcription or interpretation). 
 
-For fun, I occasionally return to old notes to clean them up and add diagrams. Notes listed in <span style = "color:gray">gray</span> are ones for which I haven't yet done so. These aren't at the level of polish I'd like &mdash; they have many more errors and typos and may have several lectures in which the LaTeX or sentence structure is messed up (typically due to me not being able to type fast enough), and most diagrams are incomplete &mdash; and may get updated in the future. 
+For fun, I occasionally return to old notes to clean them up and add diagrams. Notes listed in <span style = "color:var(--global-gray-text-color)">gray</span> are ones for which I haven't yet done so. These aren't at the level of polish I'd like &mdash; they have many more errors and typos and may have several lectures in which the LaTeX or sentence structure is messed up (typically due to me not being able to type fast enough), and most diagrams are incomplete &mdash; and may get updated in the future. 
 
 <!-- <hr> -->
 {% assign notes = site.lecture_notes | sort: 'code' %}
