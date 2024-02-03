@@ -4,23 +4,25 @@
         {% assign sclass = 'class="sd-wip"' %}
     {% else %}
         {% assign sclass = '' %}
-    {% endif %}
-    <li {{ sclass }}>
-        <span class="courseno">{{entry.courseno}}</span>: 
-    <span class="title">
-        {{ entry.title }}</span>, {{ entry.term }}
-    <span class="links">
-        {% if entry.notes %}
-          [<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
+        <li {{ sclass }}>
+            <span class="courseno">{{entry.courseno}}</span>: 
+        <span class="title">
+            {{ entry.title }}</span>, {{ entry.term }}
+        <span class="links">
+            {% if entry.notes %}
+              [<a href="{{ entry.notes | prepend: '/assets/pdf/lecture_notes/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">notes</a>]
+            {% endif %}
+        </span>
+        {% if entry.instructor %}
+            <div class="instructor">Taught by {{ entry.instructor }}.</div>
         {% endif %}
-    </span>
-    {% if entry.instructor %}
-        <div class="instructor">Taught by {{ entry.instructor }}.</div>
+    
+        {% if entry.comment %}
+            <div class="comment">{{ entry.comment }}</div>
+        {% endif %}
+        </li>
     {% endif %}
+{% endfor %}
+</ul>
 
-    {% if entry.comment %}
-        <div class="comment">{{ entry.comment }}</div>
-    {% endif %}
-    </li>
-    {% endfor %}
-    </ul>
+<!-- Move <li>...</li> out of the if statement to un-hide WIP notes-->
