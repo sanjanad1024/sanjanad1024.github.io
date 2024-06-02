@@ -28,10 +28,10 @@
       [<a href="{{ entry.html }}" target="_blank">HTML</a>]
     {% endif %}
     {% if entry.pdf %}
-      [<a href="{{ entry.pdf }}" target="_blank">pdf</a>]
+      [<a href="{{ entry.pdf | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
     {% endif %}
     {% if entry.supp %}
-      [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+      [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
     {% endif %}
     {% if entry.code %}
       [<a href="{{ entry.code }}" target="_blank">Code</a>]
