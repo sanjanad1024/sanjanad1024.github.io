@@ -9,9 +9,14 @@ topics: [Combinatorics, Number theory]
 ---
 <!-- _pages/publications.md -->
 
-Here's a list of the research papers I've written. 
+### Research papers 
 
-{% assign papers = site.papers | sort: 'date' | reverse %}
+{% assign papers = site.papers | where: 'series', 'research' | sort: 'date' | reverse %}
+{% include pub.html papers=papers %}
+
+### Expository papers
+
+{% assign papers = site.papers | where: 'series', 'expository' | sort: 'date' | reverse %}
 {% include pub.html papers=papers %}
 
 <!-- ### Combinatorics

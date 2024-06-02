@@ -14,6 +14,11 @@
         <em>{{ entry.pub }}</em>
     </div>
 {% endif %}
+{% if entry.notes %}
+    <div class="publication">
+        <em>{{ entry.notes }}</em>
+    </div>
+{% endif %}
 <span class="links">
     {% if entry.arxiv %}
       [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
@@ -23,7 +28,7 @@
       [<a href="{{ entry.html }}" target="_blank">HTML</a>]
     {% endif %}
     {% if entry.pdf %}
-      [<a href="{{ entry.pdf }}" target="_blank">PDF</a>]
+      [<a href="{{ entry.pdf }}" target="_blank">pdf</a>]
     {% endif %}
     {% if entry.supp %}
       [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]

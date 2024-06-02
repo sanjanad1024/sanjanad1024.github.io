@@ -208,6 +208,9 @@ collections:
     poster:
     blog:
     video:
+    series:
+    pdf:
+    notes:
 
 announcements:
   enabled: true
