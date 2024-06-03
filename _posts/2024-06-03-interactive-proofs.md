@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setup of interactive proofs"
+title:  "Setup of Interactive Proofs"
 date:   2024-06-03
 categories: complexity, TCS
 description: An informal description of how interactive proofs work and a few examples. 
