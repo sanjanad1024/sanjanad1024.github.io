@@ -180,7 +180,7 @@
     font-style: normal;
     background-color: var(--global-claim-bg-color);
     border-left-style: solid;
-    border-left-color: darkblue;
+    border-left-color: var(--global-claim-line-color);
 }
 .claim-un::before {
     content: 'Claim. ';
@@ -190,3 +190,11 @@
 .claim-un[text]:before {
     content: 'Claim (' attr(text) "). ";
 }  
+
+.vocab {
+    color: var(--global-vocab-color);
+}
+
+.crossref {
+    color: var(--global-vocab-color);
+}
