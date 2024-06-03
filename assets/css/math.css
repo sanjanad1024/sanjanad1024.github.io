@@ -130,7 +130,7 @@
 }
 .problem[text]:before {
     content: 'Problem ' counter(theorem) ' (' attr(text) "). ";
-}  
+}   
 
 .remark::before {
     content: 'Remark ' counter(theorem) '. ';

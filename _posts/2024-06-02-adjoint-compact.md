@@ -2,7 +2,7 @@
 layout: post
 title:  "Adjoint of a Compact Operator"
 date:   2024-06-02
-categories: analysis
+categories: analysis, functional-analysis
 description: A proof of the theorem from functional analysis that the adjoint of a compact linear operator between Banach spaces is also compact. 
 tags: 
 giscus_comments: false
