@@ -3,7 +3,7 @@ layout: post
 title:  "Setup of interactive proofs"
 date:   2024-06-03
 categories: complexity, TCS
-description: Setup for interactive proofs &mdash; an informal description of how they work and a few examples. 
+description: An informal description of how interactive proofs work and a few examples. 
 tags: 
 giscus_comments: false
 related_posts: false
