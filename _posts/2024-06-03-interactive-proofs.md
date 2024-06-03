@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interactive proofs, part 1: Setup"
+title:  "Setup of interactive proofs"
 date:   2024-06-03
 categories: complexity, TCS
 description: Setup for interactive proofs &mdash; an informal description of how they work and a few examples. 
@@ -9,7 +9,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-In this post, I'll give an informal description of what interactive proofs are, and a few simple examples. The content of this post is based on lectures from the classes 18.404 (the lecture from December 7) and 18.405 (the lecture from April 11) at MIT.  
+In this post, I'll give an informal description of what interactive proofs are, and a few simple examples. The content of this post is based on lectures from the classes 18.404 (the lecture from December 7) and 18.405 (the lecture from April 11) at MIT. (This post is primarily setup for a few future posts on some really cool things we can do with interactive proofs.)
 
 We'll first set up <em>deterministic</em> interactive proofs (to illustrate the model in a simpler setting, and to motivate what follows &mdash; in particular, why we need randomness); and then we'll extend the model to <em>randomized</em> interactive proofs (which are what we're really interested in). 
 
