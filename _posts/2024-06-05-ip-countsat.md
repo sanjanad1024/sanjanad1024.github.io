@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Interactive Proof for Count-SAT"
-date:   2024-06-04
+date:   2024-06-05
 categories: complexity, TCS
 description: An explanation of the interactive proof protocol for counting the number of satisfying assignments to a Boolean formula. 
 tags: 
