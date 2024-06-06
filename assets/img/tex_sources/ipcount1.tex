@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.pathreplacing}
+\tikzset{sdot/.style = {fill, circle, inner sep = 1.5pt}}
+
+\begin{document}
+\begin{tikzpicture}[scale = 0.8]
+    \node (e) at (0, 0) {$k_\varepsilon$};
+    \node (e0) at (-2, -2) {$k_0$};
+    \node (e1) at (2, -2) {$k_1$};
+    \node (e00) at (-3, -4) {$k_{00}$};
+    \node (e01) at (-1, -4) {$k_{01}$};
+    \node (e10) at (1, -4) {$k_{10}$};
+    \node (e11) at (3, -4) {$k_{11}$};
+    \foreach \i in {e, e0, e1} {
+        \draw (\i) -- (\i0);
+        \draw (\i) -- (\i1);
+    }
+    \foreach \i in {e00, e01, e10, e11} {
+        \node (x) at ($(\i) + (240:1)$) {};
+        \node (y) at ($(\i) + (300:1)$) {};
+        \draw (x) -- (\i) -- (y);
+    }
+\end{tikzpicture}
+\end{document}

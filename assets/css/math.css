@@ -196,5 +196,29 @@
 }
 
 .crossref {
-    color: var(--global-vocab-color);
+    color: var(--global-crossref-color);
+    font-weight: bold;
+}
+
+.myaqua {
+    color: var(--global-text-aqua-color);
+}
+
+.mypurple {
+    color: var(--global-text-purple-color);
+}
+
+.eqn {
+    counter-increment: equation;
+    display: block;
+    position: relative;
+    margin: 12px 0;
+}
+.eqn::after {
+    content: '(' counter(equation) ')';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    vertical-align: middle;
+    font-weight: bold;
 }
