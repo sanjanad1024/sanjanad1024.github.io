@@ -10,6 +10,6 @@ poster:
 blog:
 video:
 series: research
-pdf: 2207.00047v3.pdf
+pdf:
 notes:
 ---

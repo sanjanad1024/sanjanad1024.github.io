@@ -1,9 +1,42 @@
 <ul class='sd-papers'>
 {% for entry in include.papers %}
 <li>
-<div class="title">
+<span class="title">
     {{ entry.title }}
-</div>
+</span>
+<span class="links">
+  {% if entry.arxiv %}
+    [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
+  {% endif %}
+
+  {% if entry.html %}
+    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+  {% endif %}
+  {% if entry.pdf %}
+    [<a href="{{ entry.pdf | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
+  {% endif %}
+  {% if entry.supp %}
+    [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
+  {% endif %}
+  {% if entry.code %}
+    [<a href="{{ entry.code }}" target="_blank">Code</a>]
+  {% endif %}
+  {% if entry.website %}
+    [<a href="{{ entry.website }}" target="_blank">Website</a>]
+  {% endif %}
+  {% if entry.poster %}
+    [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
+  {% endif %}
+  {% if entry.abstract %}
+    [<a href="{{ entry.abstract }}" target="_blank">Abstract</a>]
+  {% endif %}
+  {% if entry.slides %}
+    [<a href="{{ entry.slides | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
+  {% endif %}
+  {% if entry.slideshare %}
+    [<a href="{{ entry.slideshare }}" target="_blank">slides</a>]
+  {% endif %}
+</span>
 {% if entry.coauthors %}
     <div class="author">
         with {{ entry.coauthors }}
@@ -19,39 +52,6 @@
         <em>{{ entry.notes }}</em>
     </div>
 {% endif %}
-<span class="links">
-    {% if entry.arxiv %}
-      [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
-    {% endif %}
-
-    {% if entry.html %}
-      [<a href="{{ entry.html }}" target="_blank">HTML</a>]
-    {% endif %}
-    {% if entry.pdf %}
-      [<a href="{{ entry.pdf | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
-    {% endif %}
-    {% if entry.supp %}
-      [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
-    {% endif %}
-    {% if entry.code %}
-      [<a href="{{ entry.code }}" target="_blank">Code</a>]
-    {% endif %}
-    {% if entry.website %}
-      [<a href="{{ entry.website }}" target="_blank">Website</a>]
-    {% endif %}
-    {% if entry.poster %}
-      [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
-    {% endif %}
-    {% if entry.abstract %}
-      [<a href="{{ entry.abstract }}" target="_blank">Abstract</a>]
-    {% endif %}
-    {% if entry.slides %}
-      [<a href="{{ entry.slides | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
-    {% endif %}
-    {% if entry.slideshare %}
-      [<a href="{{ entry.slideshare }}" target="_blank">slides</a>]
-    {% endif %}
-</span>
 </li>
 {% endfor %}
 </ul>
