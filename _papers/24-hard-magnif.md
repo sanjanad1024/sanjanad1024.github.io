@@ -11,5 +11,5 @@ blog:
 video:
 series: expository
 pdf: 18-405-project.pdf
-notes: This was my final project for 18.405 (at MIT).  
+notes: This was my final project for 18.405.  
 ---
