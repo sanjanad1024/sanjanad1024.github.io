@@ -20,4 +20,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm an undergraduate at MIT (in the class of 2025), planning to major in math and minor in linguistics. This site contains notes from some subset of the classes I've taken and seminars I've attended. 
+I'm an undergraduate at MIT (in the class of 2025), planning to major in math and minor in linguistics. This site contains some of my notes (from classes and math talks). 

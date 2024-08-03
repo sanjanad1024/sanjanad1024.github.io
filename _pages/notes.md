@@ -17,7 +17,7 @@ I like to LaTeX notes; some of these notes are posted here. For all of these not
 
 ### Lecture notes
 
-Here are notes from several of the classes I've taken at MIT.  
+Here are notes from some subset of the classes I've taken at MIT.  
 
 For fun, I occasionally return to old notes to clean them up and add diagrams. Notes listed in <span style = "color:var(--global-gray-text-color)">gray</span> are ones for which I haven't yet done so. These aren't at the level of polish I'd like, and may get updated in the future. 
 
@@ -29,7 +29,7 @@ I've also contributed to the MIT OCW student notes for <a href="https://ocw.mit.
 
 ### Reading group seminar
 
-Here are my notes from some subset of the talks at a reading group seminar at MIT.
+Here are my notes from some of the talks at a reading group seminar at MIT.
 
 {% assign notes = site.seminar_notes | where: 'series', 'Reading Group' | sort: 'date' | reverse %}
 
