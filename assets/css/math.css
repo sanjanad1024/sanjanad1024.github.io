@@ -31,12 +31,21 @@
     border-left-color: var(--global-ex-line-color);
 }
 /* Definition-box styles */
-.definition, .remark {
+.definition {
     counter-increment: theorem;
     font-style: normal;
     background-color: var(--global-defn-bg-color);
     border-left-style: solid;
     border-left-color: var(--global-defn-line-color);
+}
+
+/* Remark-box styles */
+.remark {
+    counter-increment: theorem;
+    font-style: normal;
+    background-color: var(--global-rmk-bg-color);
+    border-left-style: solid;
+    border-left-color: var(--global-rmk-line-color);
 }
 
 .theorem::before {
@@ -218,7 +227,7 @@
     content: '(' counter(equation) ')';
     position: absolute;
     right: 0px;
-    top: 0px;
-    vertical-align: middle;
+    top: 12px;
+    vertical-align: 75%;
     font-weight: bold;
 }
