@@ -18,7 +18,7 @@ Here are the research papers that I've written.
 
 ### Expository writing
 
-Here are some of the expository papers I've written (right now, these are all things that I wrote for class projects at MIT). 
+Here are some expository things I've written for class projects.
 
 {% assign papers = site.papers | where: 'series', 'expository' | sort: 'date' | reverse %}
 {% include pub.html papers=papers %}
