@@ -19,16 +19,16 @@
     [<a href="{{ entry.supp | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">pdf</a>]
   {% endif %}
   {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank">Code</a>]
+    [<a href="{{ entry.code }}" target="_blank">code</a>]
   {% endif %}
   {% if entry.website %}
-    [<a href="{{ entry.website }}" target="_blank">Website</a>]
+    [<a href="{{ entry.website }}" target="_blank">website</a>]
   {% endif %}
   {% if entry.poster %}
-    [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
+    [<a href="{{ entry.poster | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">poster</a>]
   {% endif %}
   {% if entry.abstract %}
-    [<a href="{{ entry.abstract }}" target="_blank">Abstract</a>]
+    [<a href="{{ entry.abstract }}" target="_blank">abstract</a>]
   {% endif %}
   {% if entry.slides %}
     [<a href="{{ entry.slides | prepend: '/assets/pdf/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">slides</a>]
