@@ -37,7 +37,7 @@ Here are my notes from some of the talks at a reading group seminar at MIT.
 
 ### Other talks
 
-Here are my notes from a few other talks I've attended; most are from the <a href="https://math.mit.edu/combin/" target="_blank">Richard P. Stanley Seminar in Combinatorics</a>, and a few are from colloquium talks at MIT. 
+Here are my notes from a few other talks I've attended; most are from the <a href="https://math.mit.edu/combin/" target="_blank">Richard P. Stanley Seminar in Combinatorics</a>, and a few are from colloquium talks at MIT. (Note that these have many errors or holes.)
 
 {% assign notes = site.seminar_notes | where: 'series', 'Combinatorics' | sort: 'date' | reverse %}
 

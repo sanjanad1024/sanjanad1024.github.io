@@ -11,5 +11,5 @@ blog:
 video:
 series: expository
 pdf: 18-204-project.pdf
-notes: This was my final project for 18.204.  
+notes: Final project for 18.204 (Undergraduate Seminar in Discrete Math).  
 ---
