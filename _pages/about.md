@@ -20,4 +20,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm an undergraduate at MIT (in the class of 2025), planning to major in math and minor in linguistics. I especially like combinatorics (particularly extremal and probabilistic combinatorics). This site contains some of my notes (from classes and math talks). 
+I am a first-year graduate student at Stanford. I am especially interested in extremal and probabilistic combinatorics and related topics. This site contains some of my notes from classes and math talks. 
