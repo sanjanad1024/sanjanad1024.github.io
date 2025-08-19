@@ -9,7 +9,7 @@ profile:
   image: ramsey.jpg
   image_circular: false # crops the image to make it circular
   more_info: #>
-    <a href='mailto:sanjanad@mit.edu'>sanjanad[at]mit[dot]edu</a>
+    <a href='mailto:sanjanad@stanford.edu'>sanjanad[at]stanford[dot]edu</a>
     # <p>555 your office number</p>
     # <p>123 your address street</p>
     # <p>Your City, State 12345</p>
